@@ -1,0 +1,25 @@
+import type { TranslationDict } from '../types';
+
+export const pt: TranslationDict = {
+  siteTitle: 'Ferramentas de Cor',
+  siteTagline: 'Seletor de cores, extrator de paletas e gerador de gradientes grátis',
+  home: 'Início',
+  language: 'Idioma',
+  allRightsReserved: 'Todos os direitos reservados.',
+  colorPicker: 'Seletor de Cor',
+  paletteExtractor: 'Extrair Paleta de Imagem',
+  gradientGen: 'Gerador de Gradientes',
+  hex: 'HEX',
+  rgb: 'RGB',
+  hsl: 'HSL',
+  copy: 'Copiar',
+  copied: 'Copiado!',
+  uploadImage: 'Enviar imagem',
+  extractPalette: 'Extrair paleta',
+  colorsFound: 'cores encontradas',
+  dropImage: 'Arraste uma imagem aqui ou clique para enviar',
+  gradient: 'Gradiente',
+  direction: 'Direção',
+  addColor: 'Adicionar cor',
+  randomPalette: 'Paleta aleatória',
+};

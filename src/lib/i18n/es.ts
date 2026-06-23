@@ -1,0 +1,25 @@
+import type { TranslationDict } from '../types';
+
+export const es: TranslationDict = {
+  siteTitle: 'Herramientas de Color',
+  siteTagline: 'Selector de color, extractor de paletas y generador de degradados gratis',
+  home: 'Inicio',
+  language: 'Idioma',
+  allRightsReserved: 'Todos los derechos reservados.',
+  colorPicker: 'Selector de Color',
+  paletteExtractor: 'Extraer Paleta de Imagen',
+  gradientGen: 'Generador de Degradados',
+  hex: 'HEX',
+  rgb: 'RGB',
+  hsl: 'HSL',
+  copy: 'Copiar',
+  copied: '¡Copiado!',
+  uploadImage: 'Subir imagen',
+  extractPalette: 'Extraer paleta',
+  colorsFound: 'colores encontrados',
+  dropImage: 'Arrastra una imagen aquí o haz clic para subir',
+  gradient: 'Degradado',
+  direction: 'Dirección',
+  addColor: 'Añadir color',
+  randomPalette: 'Paleta aleatoria',
+};

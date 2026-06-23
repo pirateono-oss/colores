@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.97 0.01 240);
+  --foreground: oklch(0.15 0.03 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.15 0.03 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.03 260);
+  --primary: oklch(0.55 0.2 260);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.92 0.04 260);
+  --secondary-foreground: oklch(0.35 0.05 260);
+  --muted: oklch(0.94 0.02 260);
+  --muted-foreground: oklch(0.55 0.03 260);
+  --accent: oklch(0.6 0.2 200);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.6 0.24 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.88 0.03 260);
+  --input: oklch(0.88 0.03 260);
+  --ring: oklch(0.55 0.2 260);
+}
+
+body {
+  background: 
+    radial-gradient(ellipse at 0% 0%, oklch(0.55 0.2 260 / 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 0%, oklch(0.6 0.2 200 / 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, oklch(0.55 0.2 260 / 0.04) 0%, transparent 50%);
+  min-height: 100vh;
+}
+
+.tool-card {
+  transition: all 0.25s cubic-bezier(0.2, 0.6, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tool-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, oklch(0.55 0.2 260 / 0.08), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.tool-card:hover::before {
+  opacity: 1;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -8px oklch(0.55 0.2 260 / 0.2);
+}
+
+.tool-icon {
+  background: linear-gradient(135deg, oklch(0.55 0.2 260), oklch(0.6 0.2 200));
+  color: white;
+}

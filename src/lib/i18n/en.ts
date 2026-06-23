@@ -1,0 +1,25 @@
+import type { TranslationDict } from '../types';
+
+export const en: TranslationDict = {
+  siteTitle: 'Color Tools',
+  siteTagline: 'Color picker, palette extractor and gradient generator for free',
+  home: 'Home',
+  language: 'Language',
+  allRightsReserved: 'All rights reserved.',
+  colorPicker: 'Color Picker',
+  paletteExtractor: 'Extract Palette from Image',
+  gradientGen: 'Gradient Generator',
+  hex: 'HEX',
+  rgb: 'RGB',
+  hsl: 'HSL',
+  copy: 'Copy',
+  copied: 'Copied!',
+  uploadImage: 'Upload image',
+  extractPalette: 'Extract palette',
+  colorsFound: 'colors found',
+  dropImage: 'Drop an image here or click to upload',
+  gradient: 'Gradient',
+  direction: 'Direction',
+  addColor: 'Add color',
+  randomPalette: 'Random palette',
+};
