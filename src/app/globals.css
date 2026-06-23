@@ -30,60 +30,40 @@
 
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.97 0.01 240);
-  --foreground: oklch(0.15 0.03 260);
+  --background: oklch(0.97 0.01 270);
+  --foreground: oklch(0.15 0.03 270);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0.03 260);
+  --card-foreground: oklch(0.15 0.03 270);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0.03 260);
-  --primary: oklch(0.55 0.2 260);
+  --popover-foreground: oklch(0.15 0.03 270);
+  --primary: oklch(0.6 0.2 300);
   --primary-foreground: oklch(0.98 0 0);
-  --secondary: oklch(0.92 0.04 260);
-  --secondary-foreground: oklch(0.35 0.05 260);
-  --muted: oklch(0.94 0.02 260);
-  --muted-foreground: oklch(0.55 0.03 260);
-  --accent: oklch(0.6 0.2 200);
+  --secondary: oklch(0.92 0.04 270);
+  --secondary-foreground: oklch(0.35 0.05 270);
+  --muted: oklch(0.94 0.02 270);
+  --muted-foreground: oklch(0.55 0.03 270);
+  --accent: oklch(0.65 0.2 330);
   --accent-foreground: oklch(0.98 0 0);
-  --destructive: oklch(0.6 0.24 25);
-  --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.88 0.03 260);
-  --input: oklch(0.88 0.03 260);
-  --ring: oklch(0.55 0.2 260);
+  --border: oklch(0.88 0.03 270);
+  --input: oklch(0.88 0.03 270);
+  --ring: oklch(0.6 0.2 300);
 }
 
 body {
-  background: 
-    radial-gradient(ellipse at 0% 0%, oklch(0.55 0.2 260 / 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 100% 0%, oklch(0.6 0.2 200 / 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 100%, oklch(0.55 0.2 260 / 0.04) 0%, transparent 50%);
+  background: radial-gradient(ellipse at 0% 0%, oklch(0.6 0.2 300 / 0.06) 0%, transparent 50%),
+              radial-gradient(ellipse at 100% 100%, oklch(0.65 0.2 330 / 0.06) 0%, transparent 50%);
   min-height: 100vh;
 }
 
-.tool-card {
-  transition: all 0.25s cubic-bezier(0.2, 0.6, 0.3, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-.tool-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, oklch(0.55 0.2 260 / 0.08), transparent 60%);
-  opacity: 0;
-  transition: opacity 0.25s;
-}
-
-.tool-card:hover::before {
-  opacity: 1;
-}
-
-.tool-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 40px -8px oklch(0.55 0.2 260 / 0.2);
-}
-
 .tool-icon {
-  background: linear-gradient(135deg, oklch(0.55 0.2 260), oklch(0.6 0.2 200));
+  background: linear-gradient(135deg, oklch(0.6 0.2 300), oklch(0.65 0.2 330));
   color: white;
+}
+
+.color-picker-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.color-picker-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 0.75rem;
 }
