@@ -9,6 +9,7 @@ export type TranslationDict = {
   colorPicker: string;
   paletteExtractor: string;
   gradientGen: string;
+  colorSchemes: string;
   hex: string;
   rgb: string;
   hsl: string;
@@ -22,4 +23,24 @@ export type TranslationDict = {
   direction: string;
   addColor: string;
   randomPalette: string;
+  // Color schemes
+  harmony: string;
+  complementary: string;
+  analogous: string;
+  triadic: string;
+  tetradic: string;
+  splitComplementary: string;
+  materialPalette: string;
+  appleColors: string;
+  accessibility: string;
+  contrastRatio: string;
+  textOnColor: string;
+  pass: string;
+  fail: string;
+  largeText: string;
+  normalText: string;
+  systemColors: string;
+  primary: string;
+  secondary: string;
+  tertiary: string;
 };
